@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Trabalho Java</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.js"></script>
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+                <a class="navbar-brand" href="index.html">Trabalho Java</a>
+                
+                <ul class="nav navbar-right top-nav" style="float: right">
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i>Jeisiel Ramos de Oliveira</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div class="panel panel-default" style="font-weight: bold">
+            <div class="panel-title" style="text-align: center; padding-top: 5vh">
+                <i class="glyphicon glyphicon-user" aria-hidden="true"> </i>
+                Cadastro de Pessoas
+            </div>
+            <div class="panel-body">
+                <form class="form-horizontal row" role="form" method="post" name="frm_pessoa" id="frm_pessoa" >
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="div_str_pessoa_nome">
+                    <label for="str_pessoa_nome" class="control-label">Nome</label>
+                    <input type="text" class="form-control" id="str_pessoa_nome" name="str_pessoa_nome" value="" style="text-transform: uppercase;">
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="div_str_pessoa_cpf">
+                    <label for="str_pessoa_cpf" class="control-label">CPF / CNPJ</label>
+                    <input type="text" class="form-control" id="str_pessoa_cpf" name="str_pessoa_cpf" value="">
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="div_str_pessoa_endereco">
+                    <label for="str_pessoa_endereco" class="control-label">Endereço</label>
+                    <input type="text" class="form-control" id="str_pessoa_endereco" name="str_pessoa_endereco" value="" style="text-transform: uppercase;">
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="div_str_pessoa_fone_comercial">
+                    <label for="str_pessoa_fone_comercial" class="control-label">Telefone</label>
+                    <input type="text" class="form-control" id="str_pessoa_fone_comercial" name="str_pessoa_fone_comercial" value="">
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3" id="div_str_pessoa_fone_celular">
+                    <label for="str_pessoa_fone_celular" class="control-label">Celular</label>
+                    <input type="text" class="form-control" id="str_pessoa_fone_celular" name="str_pessoa_fone_celular" value="">
+                  </div>
+                  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6" id="div_str_pessoa_email">
+                    <label for="str_pessoa_email" class="control-label">E-mail</label>
+                    <input type="text" class="form-control" id="str_pessoa_email" name="str_pessoa_email" value="">
+                  </div>
+                </form>
+                <br>
+                <br>
+                <div id="cnt_container_footer" class="float-right">
+                  <button type="button" id="btn_pessa_novo" name="btn_pessa_novo" class="btn btn-default" onclick="btn_pessoa_novo()" espera="0">
+                    <i class="fa fa-plus"> </i> Novo
+                  </button>
+                  <button type="button" id="btn_pessoa_salvar" name="btn_pessoa_salvar" class="btn btn-success" onclick="btn_pessoa_salva()" espera="0">
+                    <i class="fa fa-check"> </i> Salva
+                  </button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
